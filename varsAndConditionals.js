@@ -3,8 +3,8 @@
     and loops to play out a fight between Jon Snow and
     Jamie Lannister.
 */ 
-let jonSnowAttack = 95
-let jamieLannisterAttack = 35
+let jonSnowAttack = 45
+let jamieLannisterAttack = 80
 
 if (jonSnowAttack > jamieLannisterAttack) {
 console.log('Jon Snow has better attack than Jamie Lannister!')
@@ -33,7 +33,36 @@ if (jonSnowHealth <= jamieLannisterAttack - jonSnowDefense) {
     console.log(`Jon Snow's health is down to ${jonSnowHealth}.`)
 };
 
-/*my own stuff below
+if (jonSnowHealth + 50 >= 100) {
+    jonSnowHealth = 100
+} else {
+    jonSnowHealth += 50
+};
+
+console.log("Jon Snow's health after the health kit is " + jonSnowHealth);
+
+let coinLandHeads = true;
+
+if (coinLandHeads) {
+    console.log("The fight continues")
+} else {
+    console.log("Jon is allowed to run away")
+};
+
+//Jamie attacks Jon five times
+for (let i = 0; i < 5; i++) {
+    jonSnowHealth -= jamieLannisterAttack - jonSnowDefense
+    console.log("Ol' Jonny's health is now " + jonSnowHealth)
+}
+
+
+//POST LAB ASSIGNMENT 1 - write logic in the loop that detects if Jon's health gets 0 or less, you will print that jon is dead
+//and stop furthur loop iterations (see the "break" JS keyword for leaving a loop early) 
+
+//assignment 2
+//write same for loop as a while loop
+
+/*my own practice stuff below
 
 let jamieLannisterHealth = 100
 let jamieLannisterDefense = 0
