@@ -52,20 +52,24 @@ if (coinLandHeads) {
 //Jamie attacks Jon five times
 for (let i = 0; i < 5; i++) {
     jonSnowHealth -= jamieLannisterAttack - jonSnowDefense
-    console.log("Ol' Jon Snow's health is now " + jonSnowHealth)
+    console.log("Jon Snow's health is now " + jonSnowHealth)
     if (i <= 0)
     console.log('Jon Snow is dead')
     break;
 }
 
-
-
-
-//POST LAB ASSIGNMENT 1 - write logic in the loop that detects if Jon's health gets 0 or less, you will print that jon is dead
-//and stop furthur loop iterations (see the "break" JS keyword for leaving a loop early) 
-
 //assignment 2
 //write same for loop as a while loop
+
+//need help with  while loop
+
+while (jonSnowHealth > 0){
+    console.log("Jon Snow's health is now " + jonSnowHealth)
+    if (jonSnowHealth <= 0)
+    console.log('He dead')
+    break;
+}
+
 
 /*my own practice stuff below
 
