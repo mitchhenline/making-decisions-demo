@@ -52,8 +52,13 @@ if (coinLandHeads) {
 //Jamie attacks Jon five times
 for (let i = 0; i < 5; i++) {
     jonSnowHealth -= jamieLannisterAttack - jonSnowDefense
-    console.log("Ol' Jonny's health is now " + jonSnowHealth)
+    console.log("Ol' Jon Snow's health is now " + jonSnowHealth)
+    if (i <= 0)
+    console.log('Jon Snow is dead')
+    break;
 }
+
+
 
 
 //POST LAB ASSIGNMENT 1 - write logic in the loop that detects if Jon's health gets 0 or less, you will print that jon is dead
